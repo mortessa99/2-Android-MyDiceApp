@@ -18,7 +18,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnRollDice = findViewById(R.id.btnRollDice);
         btnRollDice.setOnClickListener(view -> {
-            int random = new Random().nextInt(7);
+            /*Random rndObject = new Random();
+            int myRandom = rndObject.nextInt(6) + 1 ;*/
+            int random = new Random().nextInt(6) + 1;
             Toast.makeText(this,String.valueOf(random),Toast.LENGTH_SHORT).show();
         });
     }
